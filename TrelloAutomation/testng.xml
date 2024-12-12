@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="functionalSuite">
+  <test thread-count="5" name="functionalTest">
+  <groups>
+  <run>
+   <include name="integration"></include>   
+  </run>
+  </groups>
+    <classes>
+      <class name="FacebookTestCases.FaceBookSignUp"/>
+      <class name="FacebookTestCases.FaceBookForgottenPwd"/>
+      <class name="FacebookTestCases.FaceBookLoginOrSignup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
